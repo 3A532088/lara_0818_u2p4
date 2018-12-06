@@ -1,4 +1,4 @@
-@extends('postsLayouts.master')
+@extends('layouts.master')
 
 @section('title', 'Clean Blog')
 
@@ -7,7 +7,7 @@
 @section('content')
     <!-- Page Header -->
     <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('{{asset('img/home-bg.jpg')}}')">
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="{{ url('/posts/post') }}">
+                    <a href="{{route('posts.show')}}">
                         <h2 class="post-title">
                             Man must explore, and this is exploration at its greatest
                         </h2>
